@@ -417,3 +417,8 @@ check_help_for() {
 }
 
 main "$@" || exit 1
+cd client
+make release
+make run_release
+
+
